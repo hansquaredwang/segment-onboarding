@@ -44,7 +44,7 @@ Email: <input name="email" required="" size="75" type="email"/>
       destination, 
       details: details 
     }; 
-    var externalId = Math.random(100);
+    var externalId = Math.floor(Math.random() * 100);
     
     // Hanhan Identify call
     analytics.identify(externalId, { 
