@@ -45,9 +45,11 @@ Email: <input name="email" required="" size="75" type="email"/>
       details: details 
     }; 
     // Hanhan Identify call
-    analytics.identify('cust0', { 
-      email: 'myfakeemail@gmail.com', 
-      name: 'Hanhan' 
+    analytics.identify('Hanhan Demo', { 
+      email: email, 
+      name: fullname,        
+      favPlace: destination 
+
     }); 
     // Placeholder for a Track call
     analytics.track('destination submitted', user, function() { 
