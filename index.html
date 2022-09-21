@@ -44,8 +44,10 @@ Email: <input name="email" required="" size="75" type="email"/>
       destination, 
       details: details 
     }; 
+    var externalId = Math.random(100);
+    
     // Hanhan Identify call
-    analytics.identify('Hanhan Demo', { 
+    analytics.identify(externalId, { 
       email: email, 
       name: fullname,        
       favPlace: destination 
